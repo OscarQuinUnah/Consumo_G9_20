@@ -11,6 +11,11 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/JS/Clientes.js"></script>
+    <style>
+        body{
+            background-color: lightskyblue;
+        }
+    </style>
 </head>
 
 <body>
@@ -41,6 +46,43 @@
                           
                         </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
+        <div class="Formulario">
+            <div class="row">
+                <div class="col-12">
+                    <h3>
+                        Agregar Nuevo Cliente 
+                    </h3>
+                </div>
+                <div class="col-12">
+                    <form class="cliente">
+                        <label for="">Numero_Cliente</label>
+                        <input type="text" id="Numero_Cliente" class="form-control" placeholder="Ingrese el Numero de Cliente">
+                        
+                        <label for="">Nombre</label>
+                        <input type="text" id="Nombre" class="form-control" placeholder="Ingrese el Nombre del Cliente">
+
+                        <label for="">Apellidos</label>
+                        <input type="text" id="Apellidos" class="form-control" placeholder="Ingrese los Apellidos del Cliente">
+
+                        <label for="">Fecha_registro</label>
+                        <input type="text" id="Fecha_registro" class="form-control" placeholder="Ingrese la Fecha de Registro">
+
+                        <label for="">Direccion_Cliente</label>
+                        <input type="text" id="Direccion_Cliente" class="form-control" placeholder="Ingrese la Dirección del Cliente">
+
+                        <label for="">RTN</label>
+                        <input type="text" id="RTN" class="form-control" placeholder="Ingrese el RTN del Cliente">
+
+                        <label for="">Email</label>
+                        <input type="text" id="Email" class="form-control" placeholder="Ingrese el Email del Cliente">
+                        <hr>
+                        <div id="btnagregarcliente" >
+                            <input type="submit" id="btnagregarcliente" onclick="AgregarClientes()" value="Ingresar Cliente" class="btn btn-success">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
