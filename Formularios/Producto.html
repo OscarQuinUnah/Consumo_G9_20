@@ -14,7 +14,64 @@
         body {
             background: -webkit-linear-gradient(left, #26e6bc, #cc6666, #26e6bc);
         }
+        .dropbtn {
+            background-color: black;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropbtn {
+                background-color: black;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: aquamarine;
+                min-width: 200px;
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: white;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown:hover .dropbtn {
+                background-color: black;
+            }
     </style>
+     <div class="dropdown">
+        <button class="dropbtn">Menu Productos</button>
+        <div class="dropdown-content">
+            <a href="/Home.html"> Volver a Home</a>
+            <a href="/Informacion.html">Informacion</a>
+            <a href="/Formularios/pedido.html">Pedido</a>
+            <a href="/Formularios/Clientes.html">Cliente</a>
+            <a href="/Formularios/Pago.html">Pago</a>
+        </div>
+    </div>
 </head>
 <body>
     
