@@ -1,27 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+<div>
 
-<head>
-    <meta charset="UFT-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewporte" content="width=device-width, initial-scale=1.0">
-    <title>Información</title>
+    <head>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewporte" content="width=device-width, initial-scale=1.0">
+        <title>Información</title>
 
-    <style>
-        body {
-            background-color: powderblue;
-        }
+        <style>
+            body {
+                background-color: powderblue;
+            }
 
-        .entidad {
-            font-family: 'Times New Roman', Times, serif;
-            text-align: justify;
-        }
+            .entidad {
+                font-family: 'Times New Roman', Times, serif;
+                text-align: justify;
+            }
 
-        .letra {
-            font-size: 18px;
-        }
-    </style>
-</head>
+            .letra {
+                font-size: 18px;
+            }
+            style>body {
+                background: -webkit-linear-gradient(left, #E11F16, #ECDD20, #313BD6);
+            }
+
+            .table-1 {
+                background-color: wheat;
+                border: 0px gray;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+            }
+
+            .dropbtn {
+                background-color: black;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: lightgrey;
+                min-width: 200px;
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: white;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown:hover .dropbtn {
+                background-color: grey;
+            }
+        </style>
+        <div class="dropdown">
+            <button class="dropbtn">Informacion</button>
+            <div class="dropdown-content">
+
+                <a href="/Home.html">Volver al menu</a>
+                <a href="/Formularios/Clientes.html">Clientes</a>
+                <a href="/Formularios/pedido.html">Pedido</a>
+                <a href="/Formularios/Pago.html">Pago</a>
+                <a href="/Formularios/Producto.html">Producto</a>
+
+            </div>
+    </head>
+</div>
 
 <body>
     <h1 align="center">
@@ -33,11 +96,17 @@
             Entidad Pedido
         </h2>
         <p class="letra">
-            Al entrar en el formulario pedido nos encontramos con dos tablas, en la primera se muestran todos los pedidos disponibles con sus respectivos datos y a la par
-            de cada fila se encuentran dos botones con funciones diferentes, uno sirve para editar algun dato que se nos apetesca dentro de la fila que hayamos seleccionado y la funcion del otro es eliminar algun pedido 
-            dentro de la tabla, siguiente a esto existe otra tabla en la cual hay casillas vacias las cuales nos indican que dato agregar dentro de ellas, despues de agregar 
-            datos existe un boton con el cual podemos agregar un nuevo pedido y este se mostrara en la tabla donde se ven todos los pedidos agregados hasta la fecha, esta tabla igual nos sirve para editar datos ya que si presionamos el boton de "editar" de algun pedido
-            todas las casillas se llenaran con los datos del pedido al que hayamos seleccionado, tambien el boton cambia para que se diferencie el editar del insertar.  
+            Al entrar en el formulario pedido nos encontramos con dos tablas, en la primera se muestran todos los
+            pedidos disponibles con sus respectivos datos y a la par
+            de cada fila se encuentran dos botones con funciones diferentes, uno sirve para editar algun dato que se nos
+            apetesca dentro de la fila que hayamos seleccionado y la funcion del otro es eliminar algun pedido
+            dentro de la tabla, siguiente a esto existe otra tabla en la cual hay casillas vacias las cuales nos indican
+            que dato agregar dentro de ellas, despues de agregar
+            datos existe un boton con el cual podemos agregar un nuevo pedido y este se mostrara en la tabla donde se
+            ven todos los pedidos agregados hasta la fecha, esta tabla igual nos sirve para editar datos ya que si
+            presionamos el boton de "editar" de algun pedido
+            todas las casillas se llenaran con los datos del pedido al que hayamos seleccionado, tambien el boton cambia
+            para que se diferencie el editar del insertar.
         </p>
     </div>
     <hr />
@@ -46,8 +115,12 @@
             Entidad Cliente
         </h2>
         <p class="letra">
-            Dentro de la entidad cliente encontramos toda la informacion sobre los clientes como su nombre, apellidos, direccion, RTN, Email y varios datos mas, ademas de eso 
-            podemos modificar cada uno de los campos, y tambien podemos ingresar y eliminar clientes de la base de datos 
+            Dentro de la entidad cliente encontramos toda la informacion sobre los clientes como: Numero de clientes, Nombre, Apellidos,
+            , Fecha en la que se ingreso el cliente al sistema, tambien esta la direccion, RTN, y su Email , ademas de mostrar todos estos datos
+            podemos modificar cada uno de los campos por si el cliente desea cambiar su informacon personal, tambien en este formulario ademas de mostrarnos 
+            todos los clientes que hay en la base de datos podemos ingresar nuevos clientes rellenando cada uno de sus respectivos campos de forma correcta
+            y por ultimo se puede eliminar alun cliente en la base datos por medio del formulario, estas opciones de editar y eliminar las podemos
+            enocntrar al lado de la informacion de cada cliente.
         </p>
     </div>
     <hr />
@@ -74,10 +147,14 @@
             Entidad Producto
         </h2>
         <p class="letra">
-            Dentro del formulario Producto encontramos una tabla con los registros contenidos en la base de datos, los datos que encontramos son:
-            Numero de pedido, nombre del articulo, precio unitario, fecha del pedido, cantidad del articulo, monto total y si aplica impuesto.
-            En este formulario tenemos la funcionalidad de agregar un producto con el boton "Ingresar Producto". Tambien tenemos el boton "Editar"
-            que nos permitira actualizar o modificar los datos de un producto seleccionado ya existente. Por ultimo, tenemos el boton de "Eliminar" 
+            Dentro del formulario Producto encontramos una tabla con los registros contenidos en la base de datos, los
+            datos que encontramos son:
+            Numero de pedido, nombre del articulo, precio unitario, fecha del pedido, cantidad del articulo, monto total
+            y si aplica impuesto.
+            En este formulario tenemos la funcionalidad de agregar un producto con el boton "Ingresar Producto". Tambien
+            tenemos el boton "Editar"
+            que nos permitira actualizar o modificar los datos de un producto seleccionado ya existente. Por ultimo,
+            tenemos el boton de "Eliminar"
             que su funcionalidad sera eliminar un registro seleccionado por su primary key.
             <br>
             <img src="http://4.bp.blogspot.com/_jgp9efqh_lg/S-DxMid_eyI/AAAAAAAAAGI/vOwQI17Br9M/s1600/04_Mki_Compras_Img01.jpg"
